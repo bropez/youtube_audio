@@ -18,6 +18,7 @@ def save_audio(video_link, dir):
 	print("Now downloading '{}".format(title))
 	audio = yt.streams.get_audio_only()
 	audio.download(os.path.join(dir, "audio_only"))
+	print("Download complete. Enjoy your new music(:")
 	
 
 if __name__ == "__main__":
